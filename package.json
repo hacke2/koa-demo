@@ -1,0 +1,26 @@
+{
+  "name": "koa-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test",
+    "dev": "node --harmony index",
+    "debug": "DEBUG=koa:index node --harmony index"
+  },
+  "keywords": [
+    "koa",
+    "demo"
+  ],
+  "author": "hacke2",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^1.1.2",
+    "koa-router": "^5.3.0"
+  },
+  "devDependencies": {
+    "debug": "^2.2.0",
+    "should": "^8.0.2",
+    "supertest": "^1.1.0"
+  }
+}

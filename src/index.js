@@ -1,16 +1,20 @@
-var debug = require('debug')('koa:index');
-var koa = require('koa');
-var app = koa();
-var router = require('koa-router')();
-var user = require('./model/User');
-var port = process.env.PORT || 3000;
+import koa from 'koa';
+import user from './model/User';
+import _debug from 'debug';
+import _router from 'koa-router';
+
+
+const debug = _debug('koa-learning:index');
+const app = koa();
+const router = _router();
+const port = process.env.PORT || 3000;
 
 
 
 app.use(function* (next) {
-	var start = new Date;
+	let start = new Date;
 	yield next;
-	var ms = new Date - start; 
+	let ms = new Date - start; 
 	this.set('X-Response-Time', ms + 'ms');
 });
 

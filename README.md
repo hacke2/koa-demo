@@ -1,11 +1,12 @@
-# koa-demo
-koa demo
+# koa-learning
+
+koa+ES2015
 
 
-**debug**
+**install**
 
 ```
-npm run debug
+npm install
 ```
 
 **dev**
@@ -18,4 +19,12 @@ npm run dev
 
 ```
 npm run test
+```
+
+**build**
+
+It can Build ES2015 to `./build` dir 
+
+```
+npm run build
 ```
